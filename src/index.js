@@ -14,7 +14,7 @@ function push_role(user, role) {
 	});
 }
 
-function inject_cazy_bot(client, prefix, giphy_token) {
+function inject_crazy_bot(client, prefix, giphy_token) {
 	if(!fs.existsSync(__dirname + "/../config.json") ) {
 		fs.writeFileSync(__dirname + "/../config.json", JSON.stringify(require(__dirname + "/../config-defaults.json"), null, 2));
 	}
@@ -74,4 +74,4 @@ function inject_cazy_bot(client, prefix, giphy_token) {
 }
 
 exports.push_role = push_role;
-exports.inject_cazy_bot = inject_cazy_bot;
+exports.inject_crazy_bot = inject_crazy_bot;
