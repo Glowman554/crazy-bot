@@ -24,6 +24,7 @@ function inject_crazy_bot(client, prefix, giphy_token) {
 	constants.bot_id = client.user.id;
 	constants.bot_prefix = prefix;
 	constants.giphy_token = giphy_token;
+	constants.giphy = require('giphy-api')(constants.giphy_token);
 	constants.nconf = nconf;
 
 	constants.bot_prefix = "-";
